@@ -1,3 +1,4 @@
+$(document).ready(function(){
 (function() {
   'use strict';
   var app = angular.module("TCC", ['ngRoute', 'ngCookies', 'pascalprecht.translate']);
@@ -34,3 +35,4 @@
       });
   });
 }());
+})

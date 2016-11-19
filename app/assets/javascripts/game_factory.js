@@ -1,3 +1,4 @@
+$(document).ready(function(){
 (function () {
     'use strict';
 
@@ -21,4 +22,5 @@
             return $http.get('locale-en.json');
         }
     }
-})();
+  }());
+})

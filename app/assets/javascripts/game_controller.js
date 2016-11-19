@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function(){(function() {
   'use strict';
   angular
     .module("TCC")
@@ -85,3 +85,4 @@
     }
   }
 }());
+})
