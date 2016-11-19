@@ -1,5 +1,6 @@
-$(document).ready(function(){(function() {
+$(document).ready(function(){
   'use strict';
+  /*global angular*/
   angular
     .module("TCC")
     .controller('GameController', GameController);
@@ -84,5 +85,6 @@ $(document).ready(function(){(function() {
       });
     }
   }
-}());
+  
+  new GameController()
 })

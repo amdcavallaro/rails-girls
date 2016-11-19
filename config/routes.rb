@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :ideas
   
   get 'pages/game'
-  
+  get 'pages/locale_en'
+  get 'pages/locale_pt'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

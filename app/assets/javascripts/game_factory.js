@@ -1,7 +1,7 @@
 $(document).ready(function(){
 (function () {
     'use strict';
-
+/*global angular*/
     angular
         .module('TCC')
         .factory('myFactory', myFactory);

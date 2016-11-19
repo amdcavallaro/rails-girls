@@ -1,14 +1,16 @@
+/*global $*/
 $(document).ready(function(){
 (function() {
   'use strict';
+  /*global angular*/
   var app = angular.module("TCC", ['ngRoute', 'ngCookies', 'pascalprecht.translate']);
   app.config(['$translateProvider', function($translateProvider) {
 
     $translateProvider.translations('en');
     // configures staticFilesLoader
     $translateProvider.useStaticFilesLoader({
-      prefix: 'locale-',
-      suffix: '.json'
+      prefix: 'locale_',
+      suffix: ''
     });
 
     // load 'en' table on startup
@@ -28,8 +30,13 @@ $(document).ready(function(){
         controller: "NavbarController",
         controllerAs: "vm"
       })
-      .when("/game", {
-        templateUrl: "game.html",
+      .when("/pages/game", {
+        templateUrl: "pages/game",
+        controller: "GameController",
+        controllerAs: "vm"
+      })
+      .otherwise({
+        templateUrl: "pages/game",
         controller: "GameController",
         controllerAs: "vm"
       });
